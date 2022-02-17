@@ -1,0 +1,153 @@
+
+
+::-webkit-scrollbar {
+  width: 1.5em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 0.95em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr-primary);
+  border-radius: 0.95em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--clr-primary);
+  border-radius: 0.75em;
+  width: 60%;
+  /* max-height: fit-content; */
+  height: 70%;
+  padding: 0.3em;
+}
+
+.navbar {
+  width: 100%;
+  background-color: var(--clr-primary);
+  border-radius: 0.5em 0.5em 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbar-brand {
+  margin-left: .5em;
+  text-transform: uppercase;
+}
+
+.inner-content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: auto;
+  /* flex-shrink: 0; */
+}
+
+.sidebar {
+  margin-right: 1em;
+  width: 30%;
+  padding: 1em;
+  min-height: 100%;
+  background-color: var(--clr-secondary);
+  border-radius: 0 0 0 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.middle {
+  margin-top: 8vh;
+}
+
+.footer-text {
+  /* position: absolute;
+              left: 6em;
+              bottom: 1em; */
+  font-weight: lighter;
+}
+
+.fa-power-off {
+  font-size: 1.4em;
+  margin-right: 0.5em;
+}
+
+.fa-heart {
+  color: rgb(214, 63, 18);
+}
+
+.main {
+  margin-top: 0.5em;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.chat {
+  position: relative;
+  background: var(--body-bg);
+  border-radius: 0.45em;
+  padding: 1em 1em 0.3em 1em;
+  margin: 1.5em 1.5em 0 0;
+  font-size: small;
+  max-width: 60%;
+  text-align: justify;
+}
+
+.chat-area {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.right > h6 {
+  text-align: right;
+}
+
+.footer {
+  position: sticky;
+  width: 90%;
+}
+
+.chat-input {
+  position: relative;
+  bottom: -1em;
+}
+
+.footer > input:focus {
+  border: 1px solid var(--clr-primary);
+}
+
+.fa-paper-plane {
+  color: var(--clr-primary);
+  font-size: 1.5em;
+}
+
+.submit-button {
+  border: none;
+  background: none;
+}
+
+
+@media screen and (max-width:524px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+}

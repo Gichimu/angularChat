@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --clr-primary: rgb(28, 228, 228);
+  --clr-secondary: rgba(28, 228, 228, 0.603);
+  --body-bg: rgba(231, 231, 231, 0.692);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

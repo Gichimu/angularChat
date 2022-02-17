@@ -1,0 +1,123 @@
+body {
+  background: url("https://wallpaperaccess.com/full/51363.jpg") no-repeat;
+  background-size: cover;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60vh;
+  width: 60vw;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1em;
+}
+
+.left {
+  width: 40%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.right {
+  margin-left: 2em;
+  width: 40%;
+  height: 90%; /* Full height (cover the whole page) */
+  border-radius: 0.75em;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    248,
+    247,
+    247,
+    0.596
+  ); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.divider {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.divider-text {
+  margin: 0.3em 1em 1em 1em;
+}
+
+.form-group {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 70%;
+}
+
+/* .btn-lg {
+    width: 40%;
+  } */
+
+.input-group {
+  width: 100%;
+}
+
+.fab {
+  font-size: 1em;
+}
+
+.fab:nth-child(even) {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.fab:hover {
+  color: rgb(13, 110, 253);
+}
+
+hr {
+  border: 0;
+  width: 70%;
+  background-color: black;
+  height: 1px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1406px) {
+  body {
+    background: url("https://wallpaperaccess.com/full/51363.jpg") no-repeat;
+    /* background-size: inherit; */
+    /* background-position: center; */
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 70%;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    margin: 0;
+  }
+}

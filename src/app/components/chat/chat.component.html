@@ -1,0 +1,123 @@
+<div class="content">
+  <nav class="navbar navbar-light">
+    <div class="container-fluid header">
+      <a class="navbar-brand" href="#">Chatroom</a>
+      <button type="button" (click)="logout()" class="btn">
+        <i class="fas fa-power-off"></i>
+      </button>
+    </div>
+  </nav>
+  <div class="inner-content">
+    <div class="sidebar text-center">
+      <div class="top">
+        <h4>Room</h4>
+        <div class="middle">
+          <h4>Online</h4>
+          <p>one<span class="badge bg-success">Success</span></p>
+          <p>two</p>
+          <p>three</p>
+        </div>
+      </div>
+
+      <div class="footer-text">
+        <small
+          >Powered with <i class="fas fa-heart"></i> by
+          <strong>Gichimu</strong></small
+        >
+      </div>
+    </div>
+    <div class="main">
+      <div class="chat-area">
+        <div class="chat">
+          <h6>user1 4.47am</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            commodi pariatur sit nulla deserunt. Temporibus voluptates excepturi
+            obcaecati ut eligendi.
+          </p>
+        </div>
+        <div class="chat right">
+          <h6>user1 4.47am</h6>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            commodi pariatur sit nulla deserunt. Temporibus voluptates excepturi
+            obcaecati ut eligendi.
+          </p>
+        </div>
+        <div class="chat">
+          <h6>User2 5.11pm</h6>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+            officia adipisci vitae eius molestias, quibusdam harum sunt ducimus,
+            impedit reiciendis, provident in ea quam debitis nesciunt illum
+            soluta! Rem velit ea tempore at laborum corporis.
+          </p>
+        </div>
+        <div class="chat right">
+          <h6>user1 7.20am</h6>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde,
+            maxime libero vitae nihil maiores consequuntur quaerat numquam
+            consectetur in ex hic autem ut quidem accusamus.
+          </p>
+        </div>
+        <div class="chat">
+          <h6>User2 9.11pm</h6>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="chat right">
+          <h6>user1 9.20am</h6>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde,
+            maxime libero vitae nihil maiores consequuntur quaerat numquam
+            consectetur in ex hic autem ut quidem accusamus.
+          </p>
+        </div>
+        <div class="chat">
+          <h6>User2 10.11pm</h6>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="chat right">
+          <h6>user1 9.20am</h6>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde,
+            maxime libero vitae nihil maiores consequuntur quaerat numquam
+            consectetur in ex hic autem ut quidem accusamus.
+          </p>
+        </div>
+        <div class="chat">
+          <h6>User2 10.11pm</h6>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="chat right">
+          <h6>user1 9.20am</h6>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde,
+            maxime libero vitae nihil maiores consequuntur quaerat numquam
+            consectetur in ex hic autem ut quidem accusamus.
+          </p>
+        </div>
+        <div class="chat">
+          <h6>User2 10.11pm</h6>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <form action=""  class="chat-input input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="message"
+          name="chatMessage"
+          aria-label="message"
+          [(ngModel)]="chatMessage"
+          aria-describedby="basic-addon2"
+        />
+        <button role="submit" (click)="onSubmit()" class="submit-button">
+            <span class="input-group-text" id="basic-addon2"
+            ><i class="fas fa-paper-plane"></i
+          ></span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
